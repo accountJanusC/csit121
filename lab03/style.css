@@ -1,0 +1,43 @@
+/* Whole page styles */
+body {
+    background-color: rgb(218, 255, 248);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+/* Heading Styles */
+
+header {
+    background-color: rgb(215, 207, 47); 
+}
+h1, h2, h3 {
+    text-align: center; 
+    height: 19px;
+    padding: 18px;
+}
+/* Paragraph and List Styles */
+p {
+    text-align: left;
+    color: rgb(121, 40, 106);
+  }
+li {
+    text-align: left;
+    color: rgb(121, 40, 106);
+  }
+/* Class and ID Styles */
+.first_subtitle {
+    background-color: yellow;
+  }
+#footer { background-color: yellow;
+}
+/* Navigation Styles */
+
+nav {
+    background-color: rgb(59, 230, 43);
+    text-align: center;
+}
+a:link { 
+    color:rgb(31, 145, 145)
+}
+a:visited {
+    color:black
+}
