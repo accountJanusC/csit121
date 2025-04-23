@@ -1,0 +1,69 @@
+/* Whole page styles */
+body {
+    background-color: rgb(233, 237, 237);
+    font-family: Helvetica, Geneva, Verdana, sans-serif;
+    }
+    img {
+    display:block;
+    margin:auto;
+           }
+
+/* Heading Styles */
+
+header {
+    background-color: #1074bb;
+    color: rgb(212, 213, 218);
+    padding: 8px;
+}
+
+h1, h2, h3 {
+    text-align: center; 
+    font-size: 1.5em;
+    height: 15px;
+    padding: 12px;
+}
+/* Navigation */
+nav {
+    position: sticky;
+    top: 0;
+    overflow: auto;
+    background-color: rgb(53, 222, 104);
+    padding: 10px;
+    text-align: center;
+}
+
+a:link { 
+    color:rgb(103, 23, 209)
+}
+a:visited {
+    color:rgb(165, 20, 17)
+}
+
+nav a:link {
+    margin: 7px;
+}
+
+nav a:hover { 
+    background-color: #ddd; 
+    color: black; 
+}
+/* Photo Caption */
+figcaption { font-family: Papyrus, fantasy;  
+        text-align: center; }
+/* Paragraph and List Styles */
+p {
+    text-align: left;
+    color: rgb(210, 12, 12);
+  }
+li {
+    text-align: left;
+    color: rgb(121, 40, 106);
+  }
+/* Class and ID Styles */
+.first_subtitle {
+    background-color: yellow;
+  }
+  footer {
+    font-size: .80em;
+    font-style: italic;
+}

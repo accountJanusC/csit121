@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+        <h1>CSIT121 Visual Media Lab</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="pasted-image.html">Adding Images</a> |
+        <a href="gif.html">Handling GIFs</a> |
+    </nav>
+	<main>
+		<figure>
+			<img src="Asteroid-Blues-Opening.png" alt="Cowboy Bebop opening" height="350" width="700">
+			<figcaption>
+			Asteroid Blues Screenshot, taken from <i>CBR</i>: <a href="https://www.cbr.com/cowboy-bebop-episodes-focused-on-main-characters-backstories/">"Cowboy Bebop: Every Episode Which Focuses On The Main Characters’ Backstories"</a>
+			</figcaption>
+			</figure>
+		<h2>Why I Chose The Image</h2>
+		<p>I chose this image due to my fairly high regard for the Cowboy Bebop anime series, 
+            particularly for its occasionally poignant themes and artistic direction.</p>
+		<h2>Lab 04 Reflection</h2>
+		<p>In creating the home page for this lab, I familiarised myself with how to add a navigation bar
+        as well as an image with the figure and figcaption elements. I originally prepared an embedded stylesheet,
+        which ended up being a squandered effort since I later saw that an external one was preferred. I also found
+        out that moving the images used here to the 'Images' folder caused it to fail to load, likely due to being
+        unable to update the file path. Hence, I needed to keep both the image and html files all in the same folder.
+        </p>
+        <h2>Lab 08 Reflection</h2>
+		<p>To modify my navigation bar into one that is "sticky", I needed to familiarise
+        myself with the W3Schools tutorial provided in the assignment description. I learned
+        that the 2 most important aspects to create the sticky effect is setting the CSS position
+        property to 'sticky'. The top property I also didn't understand so the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/top">MDN article on it</a>
+        helped me grasp how to toggle it to different locations. The <a href="https://www.w3schools.com/css/css_overflow.asp">W3Schools article on the overflow property</a>
+        also helped me understand its purpose in my stylesheet.
+        </p>
+        <p>I did not need to use JavaScript to create the sticky navbar. In the W3Schools tutorial,
+        I initially had no idea what the javascript:void(0) syntax did but <a href="https://www.freecodecamp.org/news/javascript-void-keyword-explained/">a freeCodeCamp article</a>
+        cleared things up in explaining that it serves to prevent reloading and navigation to other pages.
+        </p>
+			 <footer>Copyright &copy; Student Janus CSIT121 2025</footer>
+   </main>
+</body>
+</html>
