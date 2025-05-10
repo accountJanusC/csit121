@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+        <h1>Lab on Webmentions</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Overview</a> |
+        <a href="importance.html">Importance</a> |
+        <a href="WMexamples.html">How to use</a> |
+        <a href="references.html">References</a> |
+    </nav>
+	<main>
+
+		<h2>Concepts and W3C Guidelines</h2>
+		<p>To fully understand and utilise the sending and receiving of Webmentions, one
+        must understand the basics of HTTP requests. But first of all, you must be able
+        to access either blogging software, plugins for software from content management systems
+        or particular web services or APIs that can send and receive Webmentions. To preface,
+        Webmentions are often sent with a "link rel" attribute. They involve the "source"
+        parameter representing the sender's URL and the "target" parameter representing
+        the receiver's URL. The @ symbol is usually used as well to create the linkback.
+        </p>
+        <p> For the
+        &lt;a&gt; tag containing the link to a post you wants to send the Webmention to, you
+        should add 'in reply to:' followed by &lt;a class="u-in-reply-to" before the href
+        attribute. Then add an HTML class of "e-content" to &lt;p&gt; or some other tag
+        representing the body of text. Put a &lt;div class="h-entry"&gt; around the message code
+        to indicate the whole thing is a post.
+        <p>Check out <a href="https://aaronparecki.com/2018/06/30/11/your-first-webmention" target="_blank">the guide</a>
+            by Webmention co-developer Aaron Parecki if you want more details on this process!
+        </p>
+        <p>Webmention.rocks is useful for testing your Webmention feature and checking for
+        any errors.</p>
+
+        
+		<h2>Lab 04 Reflection Pt. 3</h2>
+		<p>The screenshot below is also a simple way to set up Webmention notifications (via Webmention.io)
+        </p>
+        <figure>
+			<img src="webmentionIO-setup.png" alt="Setting up a Webmention" height="466" width="850">
+			<figcaption>
+			Clip of a Codementor video on Webmentions: <a href="https://www.youtube.com/watch?v=QrWvnIRjOuI&t=613s">"HTML code for receiving Webmentions"</a>
+			</figcaption>
+		</figure>
+			 <footer>Copyright &copy; Student Janus CSIT121 2025</footer>
+   </main>
+</body>
+</html>
