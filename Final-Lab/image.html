@@ -28,18 +28,28 @@
 			</figcaption>
 			</figure>
 		<h2>Lab 4 Image</h2>
-		<p>I chose the image above way back in Lab 4 after having recently watched the donghua series Blades of the Guardians
-        aka Biao Ren. I was impressed by its historical elements, wuxia-inspired characters, and homages to 
-        Sergio Leone Westerns.</p>
+		<p>I chose the image above to be pasted via HTML back in Lab 4 after having recently watched the donghua series Blades of the Guardians
+        	aka Biao Ren. I was impressed by its historical elements, wuxia-inspired characters, and homages to 
+        	Sergio Leone Westerns. Regarding the syntax used to paste the image, I used the 'alt=' and '&lt;figcaption&gt;' 
+		attributes to make it more accessible for those who use screen readers & other assistive tools.</p>
 		    <h3>Final Reflection cont'd</h3>
 		<p>I revisited and modified Lab 4 for the Images webpage here. I spent quite a bit of time trying to find a suitable
         background image after having the 'background-image: url("");' CSS property prepared, since none of the previous ones
         I used provided sufficient colour contrast to make text content visible. The handful of movie/animation images I tried
         had made other elements of the site (like the text) hard to see. So one thing I definitely (re)learned was that a background
-        image should only have one shade of colour for maximum contrast and readability on a website. I also (re)learned from
+        image should only have one shade of colour for maximum contrast and perceivability on a website. I also (re)learned from
         <a href="https://www.w3schools.com/csS/css_align.asp">W3Schools</a> that 'margin-left: auto;' + 'margin-right: auto;'
         are good for centering graphics and other elements in CSS. And like with the previous image-related labs, I needed to use
-        sites like freeconvert.com to convert avif and webp formats to JPG or PNG ones.</p>
+        sites like freeconvert.com to convert avif and webp formats to JPG or PNG ones.
+	</p>
+        <p>After testing my Final Lab site on a mobile device, I realised that my images looked
+        pretty distorted (especially the one in my Webmention page). The only class resource that gave
+        me an idea on how to fix it was the brief mention of 'flexible images' in the Layout PowerPoint.
+        After looking it up online, I found a <a href="https://www.w3schools.com/howto/howto_css_image_responsive.asp">W3Schools article</a>
+        showing how the 'max-width: 100%;' + 'height: auto;' properties can make an image better conform to
+        the Robustness principle of WCAG. I was happy to find out that non-SVG formatted images like the ones I
+        used here can still look ok when resized on different devices.
+        </p>
 			 <footer>Copyright &copy; Student Janus CSIT121 2025</footer>
    </main>
 </body>
