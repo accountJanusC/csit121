@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<header>
+    <h1>Final Lab</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Overview</a> |
+        <a href="image.html">Images</a> |
+        <a href="navigation.html">Navigation</a> |
+        <a href="tables.html">Tables</a> |
+        <a href="Webmention.html">Webmention</a> |
+    </nav>
+	<main>
+
+		<h2>Lab 10 Experience</h2>
+            <p>Having to chose a new standard to learn and present to others online was by far the
+            hardest assignment in the class, especially with the 9 paragraph minimum requirement to get
+            full credit for it. Anyway, on to the topic, I chose Webmention and found that I needed to learn
+            some other programming concepts to really understand how the standard works. Here are the basic concepts
+            I researched for Lab 10.</p>
+            <h3>Webmention overview
+            </h3>
+            <p>A Webmention is a newer type of linkback mechanism developed by
+            IndieWeb, a community of programmers dedicated to offering personal and
+            decentralised alternatives to corporate-owned web services. The mechanism
+            ultilises an HTTP request that allows one to notify any URL when they link
+            to it. Further context can be added to the Webmention such as likes or reposts,
+            and the receiver can respond to the sending server that notified them. </p>
+            
+             <p class="highlight">Like with the vast majority of  W3C standards, familiarity with
+                other programming terms are necessary to fully understand the coding involved in Webmention.
+                Here are some of the terms:</p>
+                <p><em>Linkback</em>, which is defined as notifications a site receives whenever someone links
+                   to it. Linkback mechanisms usually take the href attributes in &lt;a&gt; tags for
+                   processing (Orchard Core, n.d.).
+                </p>
+                <p><em>GET</em>, which is defined as request on HTTP made by a client (such as a web browser) to
+                a server to retrieve a specified portion of data. It is involved in many functions such as
+                when a webpage is loaded, a file is downloaded, and a query in a search engine is performed.
+                GET requests should be used for anything involving sensitive/personal information.
+                </p>
+                <p><em>HEAD</em>, which is essentially the same type of request as GET except it only retrieves
+                header rather than body data (so no other text, images or files). It is good for checking on
+                data like size or last modified date without needing to download the whole thing.</p>
+                <p><em>POST</em>, is something of the opposite to GET where it's a request to send data to a
+                a server. Unlike a GET, the request can be used to change or add to the server's database
+                and is sent in the request's body rather than its URL. POST can also be used to send sensitive
+                info. Further helpful info on the HTTP requests can be found on <a href="https://www.freecodecamp.org/news/learn-http-methods-like-get-post-and-delete-a-handbook-with-code-examples" target="_blank">Joan Ayebola's article</a>
+                in freeCodeCamp.
+                </p>
+           
+                <p><em>cURL or Curl</em>, which is a command line tool for retrieving and modification. The tool
+                can be used to send GET, POST and other HTTP requests online. Curl is found on the common
+                Operating systems like on Linux/Unix (via the bash shell), Windows, and MacOS.
+                </p>
+                <p><em>API</em>, which stands for Application Programming Interface. It is a set of rules or
+                protocols that allow communication between different software applications. An API
+                serves as a bridge connecting two parties on the web, such as a client and server.
+                More details on APIs can be found on the <a href="https://www.geeksforgeeks.org/what-is-an-api/" target="_blank">corresponding GeeksforGeeks article</a>.    
+                </p>
+                <p><em>Fetch API</em>, which is a Javascript API using the 'fetch()' syntax that allows Asynchronous
+                JavaScript and XML (AJAX) requests. It can be used to make GET and POST requests, with details on
+                how to do that made available in <a href="https://www.geeksforgeeks.org/what-is-an-api/" target="_blank">Kingsley Ubah's article</a>
+                on freeCodeCamp.    
+            </p>
+                <p><em>JSON</em>, which stands for JavaScript Object Notation. It is commonly used in data communication,
+                notably between a client and server. Despite its name, it is not the same as JavaScript.
+                JSON is language-independent data exchange format, which means that it is compatible
+                with and can be read on other programming languages including Python, Javascript, Java etc..
+                Further helpful info on JSON can be found on <a href="https://www.freecodecamp.org/news/what-is-json-a-json-file-example/" target="_blank">Tapas Adhikary's article</a>
+                in freeCodeCamp.
+                </p>
+                <p><em>Microformats</em>, which are a relatively easy-to-learn syntax for adding and marking up info in
+                HTML format. They generally take the form of predefined HTML class names. Major microformats are
+                h-entry, which refers to date-stamped online content (such as a blog post), h-card, which
+                represents a person or organisation, and e-content, which stands for the actual text of an online post.
+                Microformats are a key feature of Webmentions.
+            </p>
+		<p>To fully understand and utilise the sending and receiving of Webmentions, one
+        must understand the basics of HTTP requests. But first of all, you must be able
+        to access either blogging software, plugins for software from content management systems
+        or particular web services or APIs that can send and receive Webmentions. To preface,
+        Webmentions are often sent with a "link rel" attribute. They involve the "source"
+        parameter representing the sender's URL and the "target" parameter representing
+        the receiver's URL. The @ symbol is usually used as well to create the linkback.
+        </p>
+        <p> For the &lt;a&gt; tag containing the link to a post you wants to send the Webmention
+        to, you should add 'in reply to:' followed by &lt;a class="u-in-reply-to" before the
+        href attribute. Then add an HTML class of "e-content" to &lt;p&gt; or some other tag
+        representing the body of text. Put a &lt;div class="h-entry"&gt; around the message code
+        to indicate the whole thing is a post.
+        <p>Check out <a href="https://aaronparecki.com/2018/06/30/11/your-first-webmention" target="_blank">the guide</a>
+            by Webmention co-developer Aaron Parecki if you want more details on this process!
+        </p>
+        <p>Webmention.rocks is useful for testing your Webmention feature and checking for
+        any errors.</p>
+		<p>The screenshot below is also a simple way to set up Webmention notifications (via Webmention.io)
+        </p>
+        <figure>
+			<img src="webmentionIO-setup.png" alt="Setting up a Webmention" height="466" width="850">
+			<figcaption>
+			Clip of a Codementor video on Webmentions: <a href="https://www.youtube.com/watch?v=QrWvnIRjOuI&t=613s">"HTML code for receiving Webmentions"</a>
+			</figcaption>
+		</figure>
+
+			 <footer>Copyright &copy; Student Janus CSIT121 2025</footer>
+   </main>
+</body>
+</html>
